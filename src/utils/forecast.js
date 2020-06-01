@@ -8,7 +8,7 @@ request({url, json:true},(error,{body})=>{
     } else if(body.error){
         callback('cannot find the weather try again',undefined)
     } else {
-       callback( undefined,body.current.weather_descriptions[0] +'. It is currently ' + body.current.temperature + ' degree and feels like ' + body.current.feelslike+ ' degree and humidity is' + body.current.humidity + '%.'
+       callback( undefined,body.current.weather_descriptions[0] +'. It is currently ' + body.current.temperature + ' degree and feels like ' + body.current.feelslike+ ' degree and humidity is ' + body.current.humidity + '%.'
         )
     }
 })
